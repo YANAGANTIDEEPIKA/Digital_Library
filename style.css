@@ -1,0 +1,116 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 80%;
+    max-width: 900px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 20px; /* Added gap to create space between login forms */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Student and Admin Login Styling */
+.login-form-1, .login-form-2 {
+    flex-grow: 1; /* Ensures both sections take equal space */
+    padding: 40px;
+    text-align: center;
+}
+
+.login-form-1 {
+    background: white;
+}
+
+.login-form-2 {
+    background: #007bff;
+    color: white;
+}
+
+h3 {
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+.form-control {
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.text-danger {
+    font-size: 14px;
+    display: block;
+    text-align: left;
+}
+
+/* Button Styles */
+.btnSubmit {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Student Login Button */
+.login-form-1 .btnSubmit {
+    background-color: #007bff;
+    color: white;
+}
+
+.login-form-1 .btnSubmit:hover {
+    background-color: #0056b3;
+}
+
+/* Admin Login Button */
+.login-form-2 .btnSubmit {
+    background-color: white;
+    color: #007bff;
+}
+
+.login-form-2 .btnSubmit:hover {
+    background-color: #e6e6e6;
+}
+
+/* Forgot Password Link */
+.ForgetPwd {
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.login-form-1 .ForgetPwd {
+    color: #007bff;
+}
+
+.login-form-2 .ForgetPwd {
+    color: white;
+}
+
+.ForgetPwd:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    body {
+        align-items: flex-start; /* Align to top instead of center */
+        padding-top: 20px; /* Additional padding */
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 10px; /* Adjusts space between login forms */
+        min-height: auto; /* Allows the height to adjust dynamically */
+    }
+}
