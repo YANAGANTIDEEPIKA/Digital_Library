@@ -6,7 +6,7 @@ include("data_class.php");
 
 $bookname=$_POST['bookname'];
 $bookdetail=$_POST['bookdetail'];
-$bookaudor=$_POST['bookauthor'];
+$bookaudor=$_POST['bookaudor'];
 $bookpub=$_POST['bookpub'];
 $branch=$_POST['branch'];
 $bookprice=$_POST['bookprice'];

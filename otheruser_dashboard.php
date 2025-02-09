@@ -1,6 +1,6 @@
 <?php
 
-include("data_class.php");
+session_start();
 
 $userloginid=$_SESSION["userid"] = $_GET['userlogid'];
 // echo $_SESSION["userid"];
@@ -28,7 +28,7 @@ $userloginid=$_SESSION["userid"] = $_GET['userlogid'];
     </head>
     <style>
             .innerright,label {
-    color: rgb(194, 15, 125);
+    color: rgb(16, 170, 16);
     font-weight:bold;
 }
 .container,
@@ -55,12 +55,12 @@ input{
     width: 75%;
 }
 
-/* .innerright {
-    background-color: rgb(253, 119, 231);
-} */
+.innerright {
+    background-color: lightgreen;
+}
 
 .greenbtn {
-    background-color: rgb(194, 15, 125);
+    background-color: lightgray;
     color: black;
     width: 95%;
     height: 40px;
@@ -75,21 +75,21 @@ a {
 }
 
 th{
-    background-color: rgb(194, 15, 125);
-    color: white;
+    background-color: #16DE52;
+    color: black;
 }
 td{
     background-color:#b1fec7;
-    color: white;
+    color: black;
 }
 td, a{
-    color:white;
+    color:black;
 }
     </style>
     <body>
 
     <?php
-   
+   include("data_class.php");
     ?>
            <div class="container">
             <div class="innerdiv">
